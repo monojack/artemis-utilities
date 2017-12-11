@@ -9,8 +9,8 @@ export { mapObject, } from './js/mapObject'
 export { removeEmptyOrNilProps, } from './js/removeEmptyOrNilProps'
 export { compose, } from './js/compose'
 
-export { createDocumentFromNode, } from '.asts/createDocumentFromNode'
-export { parseSourceOrDocument, } from '.asts/parseSourceOrDocument'
+export { createDocumentFromNode, } from './asts/createDocumentFromNode'
+export { parseSourceOrDocument, } from './asts/parseSourceOrDocument'
 
 export { hasDirectives, } from './directives/hasDirectives'
 export { rejectDirectives, } from './directives/rejectDirectives'
