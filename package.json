@@ -1,6 +1,6 @@
 {
   "name": "artemis-utilities",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "GraphQL utility functions",
   "repository": {
     "type": "git",
