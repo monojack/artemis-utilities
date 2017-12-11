@@ -6,11 +6,7 @@
     "type": "git",
     "url": "git+https://github.com/monojack/artemis-utilities.git"
   },
-  "keywords": [
-    "javascript",
-    "artemis-utilities",
-    "graphql"
-  ],
+  "keywords": ["javascript", "artemis-utilities", "graphql"],
   "author": "Ionut Achim <achimvionut@gmail.com>",
   "main": "./lib/index.js",
   "module": "es/index.js",
@@ -53,21 +49,17 @@
   "scripts": {
     "build:cjs": "cross-env BABEL_ENV=cjs babel src --out-dir lib",
     "build:es": "cross-env BABEL_ENV=es babel src --out-dir es",
-    "build:umd": "cross-env BABEL_ENV=rollup NODE_ENV=development rollup -c -o dist/artemis-utilities.js",
-    "build:umd:min": "cross-env BABEL_ENV=rollup NODE_ENV=production rollup -c -o dist/artemis-utilities.min.js",
-    "build": "npm run build:cjs && npm run build:es && npm run build:umd && npm run build:umd:min",
+    "build:umd":
+      "cross-env BABEL_ENV=rollup NODE_ENV=development rollup -c -o dist/artemis-utilities.js",
+    "build:umd:min":
+      "cross-env BABEL_ENV=rollup NODE_ENV=production rollup -c -o dist/artemis-utilities.min.js",
+    "build":
+      "npm run build:cjs && npm run build:es && npm run build:umd && npm run build:umd:min",
     "prepare": "npm run clean && npm run build",
     "lint": "eslint src",
     "clean": "rimraf lib dist es",
-    "dev": "npm run build:es -- -w",
-    "test": "cross-env BABEL_ENV=test jest",
-    "test:watch": "cross-env BABEL_ENV=test jest --watch"
+    "dev": "npm run build:es -- -w"
   },
   "npmName": "artemis-utilities",
-  "files": [
-    "dist",
-    "lib",
-    "es",
-    "src"
-  ]
+  "files": ["dist", "lib", "es"]
 }
